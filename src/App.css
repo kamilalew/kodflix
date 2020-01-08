@@ -4,7 +4,24 @@
 
 .image {
   flex: 1;
-  padding: 30px;
+  padding: 10px;
+  position: relative;
+}
+
+.title {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  background-color: white;
+  color: #30846B;
+  opacity: 0.9;
+}
+
+.image:hover .title{
+  display: block;
 }
 
 img {
