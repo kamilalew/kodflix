@@ -6,22 +6,26 @@
   flex: 1;
   padding: 10px;
   position: relative;
+  overflow: hidden;
 }
 
 .title {
-  display: none;
+  transition: bottom ease 2s, font 2s;
+  opacity: 0.9;
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   width: 100%;
-  font-size: 30px;
+  font-size: 20px;
   background-color: white;
   color: #30846B;
-  opacity: 0.9;
 }
 
 .image:hover .title{
   display: block;
+  bottom: 0px;
+  height: 200px;
+  font-size: 30px;
 }
 
 img {
