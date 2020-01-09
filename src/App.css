@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 .image {
   flex: 1;
   padding: 10px;
@@ -17,7 +16,7 @@
   bottom: -100px;
   left: 0;
   width: 100%;
-  font-size: 20px;
+  font-size: 10px;
   background-color: white;
   color: #30846B;
 }
@@ -25,8 +24,8 @@
 .image:hover .title{
   display: block;
   bottom: 0px;
-  height: 200px;
-  font-size: 30px;
+  height: 90px;
+  font-size: 15px;
 }
 
 img {

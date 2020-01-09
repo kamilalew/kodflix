@@ -6,49 +6,21 @@ import grown_ups from './images/grown_ups.jpeg';
 import perfect_strangers from './images/perfect_strangers.jpeg'; 
 import twice_born from './images/twice_born.jpeg'; 
 import zohan from './images/zohan.jpeg'; 
+import Movies from './titles.js';
+
 
 function App() {
   return (
     <div className="App">
         <div className='container'>
-          <div className='image'>
-            <img src={eat_pray_love} alt='Eat Pray Love movie cover'/>
-            <div className='title'>
-              <h1>Eat Pray Love</h1>
-            </div>
-          </div>
-          <div className='image'>
-            <img src={frida} alt='Frida movie cover'/>
-            <div className='title'>
-              <h1>Frida</h1>
-            </div>
-          </div>
-          <div className='image'>
-            <img src={grown_ups} alt='Grown Ups movie cover'/>
-            <div className='title'>
-              <h1>Grown Ups</h1>
-            </div>
-          </div>
+          <Movies name='Twice Born' image={twice_born} alt='Twice Born Movie Cover'/>
+          <Movies name='Perfect Strangers' image={perfect_strangers} alt='Perfect Strangers Movie Cover'/>
+          <Movies name='Frida' image={frida} alt='Frida Movie Cover'/>
         </div>
         <div className='container'>
-          <div className='image'>
-            <img src={perfect_strangers} alt='Perfect Strangers movie cover'/>
-            <div className='title'>
-              <h1>Perfect Strangers</h1>
-            </div>
-          </div>
-          <div className='image'>
-            <img src={twice_born} alt='Twice Born movie cover'/>
-            <div className='title'>
-              <h1>Twice Born</h1>
-            </div>
-          </div>
-          <div className='image'>
-            <img src={zohan} alt='Zohan movie cover'/>
-            <div className='title'>
-              <h1>Zohan</h1>
-            </div>
-          </div>
+          <Movies name='Eat Pray Love' image={eat_pray_love} alt='Eat Pray Love Movie Cover'/>
+          <Movies name='Grown Ups' image={grown_ups} alt='Grown Ups Movie Cover'/>
+          <Movies name='Zohan' image={zohan} alt='Zohan Movie Cover'/>
         </div>
     </div>
   );
