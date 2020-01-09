@@ -10,7 +10,7 @@
 }
 
 .title {
-  transition: bottom ease 2s, font 2s;
+  transition: bottom ease 1s, font 1s;
   opacity: 0.9;
   position: absolute;
   bottom: -100px;
