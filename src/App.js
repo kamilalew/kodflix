@@ -12,7 +12,7 @@ import Gallery from './Gallery.js';
 function App() {
   return (
     <div className="App">
-       <Gallery />
+      <Gallery />
     </div>
   );
 }
