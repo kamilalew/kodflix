@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Movies(props) {
+export default function Movies(props) {
     return (
       <div className='image'>
               <img src={props.image} alt={props.alt}/>
@@ -10,5 +10,3 @@ function Movies(props) {
             </div>
     )
   }
-
-  export default Movies;
