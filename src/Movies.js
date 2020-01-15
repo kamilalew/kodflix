@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Movies(props) {
   return (
-    <div className='image'>
+    <Link to='/details' className='image'>
       <img src={props.image} alt={props.alt} />
       <div className='title'>
         <h1>{props.name}</h1>
       </div>
-    </div>
+    </Link>
   )
 }
