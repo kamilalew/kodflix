@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import eat_pray_love from './images/eat_pray_love.jpeg';
 import frida from './images/frida.jpg';
 import grown_ups from './images/grown_ups.jpeg';

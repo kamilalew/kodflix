@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
-import Gallery from './components/Gallery';
-import Details from './components/Details'
+import Gallery from './Gallery.js';
+import Details from './Details.js';
 
 function App() {
   return (
