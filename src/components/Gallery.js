@@ -10,10 +10,10 @@ import Movies from './Movies.js';
 
 export default function Gallery() {
     return (
-       <div>
+        <div>
             <div className='container'>
-                <Movies id='twice_born' name='Twice Born' image={twice_born} alt='Twice Born Movie Cover'/>
-                <Movies id='perfect_strangers' name='Perfect Strangers' image={perfect_strangers} alt='Perfect Strangers Movie Cover'/>
+                <Movies id='twice_born' name='Twice Born' image={twice_born} alt='Twice Born Movie Cover' />
+                <Movies id='perfect_strangers' name='Perfect Strangers' image={perfect_strangers} alt='Perfect Strangers Movie Cover' />
                 <Movies id='frida' name='Frida' image={frida} alt='Frida Movie Cover' />
             </div>
             <div className='container'>
