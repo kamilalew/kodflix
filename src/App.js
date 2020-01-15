@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import './App.css';
+import './components/Gallery.css';
 import Gallery from './components/Gallery.js';
 import Details from './components/Details.js';
 

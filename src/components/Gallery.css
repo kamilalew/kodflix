@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .image {
+    padding: 10px;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .title {
+    transition: bottom ease 1s, font 1s;
+    opacity: 0.9;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    font-size: 10px;
+    background-color: white;
+    color: #30846b;
+    text-align: center;
+  }
+  
+  .image:hover .title {
+    display: block;
+    bottom: 0px;
+    height: 90px;
+    font-size: 15px;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+  }
