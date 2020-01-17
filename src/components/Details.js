@@ -30,7 +30,7 @@ export default class Details extends React.Component {
 
         return (
             <Link to='/'>
-                <h1 style={this.state.style}>{this.state.message}</h1>
+                <h1 className='details' style={this.state.style}>{this.state.message}</h1>
             </Link>
         );
     }

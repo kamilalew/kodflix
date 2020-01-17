@@ -1,17 +1,21 @@
 import all_about_my_mother from '../images/all_about_my_mother.jpg';
-import frida from '../images/frida.jpg';
-import grown_ups from '../images/grown_ups.jpeg';
-import perfect_strangers from '../images/perfect_strangers.jpeg';
-import twice_born from '../images/twice_born.jpeg';
-import zohan from '../images/zohan.jpeg';
+import talk_to_her from '../images/talk_to_her.jpg';
+import volver from '../images/volver.jpg';
+import julieta from '../images/julieta.jpg';
+import pain_and_glory from '../images/pain_and_glory.jpg';
+import the_skin_i_live_in from '../images/the_skin_i_live_in.jpg';
+import tie_me_up_tie_me_down from '../images/tie_me_up_tie_me_down.jpg';
+import verge_of_a_nervous_breakdown from '../images/verge_of_a_nervous_breakdown.jpg';
 
 export default function getGallery(movies) {
     return [
-        { id: 'twice_born', name: 'Twice Born', image: twice_born, alt: 'Twice Born Movie Cover' },
-        { id: 'perfect_strangers', name: 'Perfect Strangers', image: perfect_strangers, alt: 'Perfect Strangers Movie Cover' },
-        { id: 'frida', name: 'Frida', image: frida, alt: 'Frida Movie Cover' },
         { id: 'all_about_my_mother', name: 'All About My Mother', image: all_about_my_mother, alt: 'All About My Mother Movie Cover' },
-        { id: 'grown_ups', name: 'Grown Ups', image: grown_ups, alt: 'Grown Ups Movie Cover' },
-        { id: 'zohan', name: 'Zohan', image: zohan, alt: 'Zohan Movie Cover' }
+        { id: 'talk_to_her', name: 'Talk To Her', image: talk_to_her, alt: 'Talk To Her Movie Cover' },
+        { id: 'volver', name: 'Volver', image: volver, alt: 'Volver Movie Cover' },
+        { id: 'pain_and_glory', name: 'Pain and Glory', image: pain_and_glory, alt: 'Pain and Glory Movie Cover' },
+        { id: 'julieta', name: 'Julieta', image: julieta, alt: 'Julieta Movie Cover' },
+        { id: 'tie_me_up_tie_me_down ', name: 'Tie Me Up Tie Me Down', image: tie_me_up_tie_me_down , alt: 'Tie Me Up Tie Me Down Movie Cover' },
+        { id: 'verge_of_a_nervous_breakdown', name: 'Verge Of a Nervous Breakdown', image: verge_of_a_nervous_breakdown, alt: 'Verge Of a Nervous Breakdown Movie Cover' },
+        { id: 'the_skin_i_live_in', name: 'The Skin I Live In', image: the_skin_i_live_in, alt: 'The Skin I Live In Movie Cover' }
     ]
 }
