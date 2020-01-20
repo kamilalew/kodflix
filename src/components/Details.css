@@ -1,6 +1,15 @@
 .details {
     text-align: center;
+}
+
+.detailsName {
     color: red;
     margin-top: 200px;
     font-size: 50px;
+}
+
+.detailsLink {
+    text-align: center;
+    font-size: 30px;
+    color: white;
 }

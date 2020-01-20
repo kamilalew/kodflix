@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Details.css'
+import './Details.css';
+import getGallery from './getGallery.js';
 
 export default class Details extends React.Component {
     constructor(props) {
@@ -9,29 +10,28 @@ export default class Details extends React.Component {
 
         this.state =
         {
-            message: 'Hello, this will be the details page for each Movie & TV show :)',
+            individualMovie: {}
         }
     }
 
 
     componentDidMount() {
-        this.interval = setInterval(() => {
-            this.setState({
-                message: 'Coming soon! :)',
-                style: {
-                    color: 'white',
-                    fontSize: '40px',
-                }
-            });
-        }, 3000);
+        let movieId = this.props.match.params.movieId;
+        let individualMovie = getGallery()
+            .find(individualMovie => individualMovie.id === movieId);
+
+        this.setState({
+            individualMovie: individualMovie
+        });
     }
 
     render() {
 
         return (
-            <Link to='/'>
-                <h1 className='details' style={this.state.style}>{this.state.message}</h1>
-            </Link>
+            <div className = 'details'>
+                <h1 className = 'detailsName' style={this.state.style}>{this.state.individualMovie.name}</h1>
+                <Link className = 'detailsLink' to='/'>Back to homepage</Link>
+            </div>
         );
     }
 } 

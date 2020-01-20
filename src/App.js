@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Route exact path='/' component={Gallery} />
-      <Route exact path='/:details' component={Details} />
+      <Route exact path='/:movieId' component={Details} />
     </BrowserRouter>
   );
 }
