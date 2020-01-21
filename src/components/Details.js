@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Details.css';
 import getGallery from './getGallery.js';
+import { Redirect } from 'react-router-dom';
 
 export default class Details extends React.Component {
     constructor(props) {
@@ -20,18 +21,22 @@ export default class Details extends React.Component {
         let individualMovie = getGallery()
             .find(individualMovie => individualMovie.id === movieId);
 
+
         this.setState({
             individualMovie: individualMovie
         });
-    }
+    } Ï
 
     render() {
-
-        return (
-            <div className = 'details'>
-                <h1 className = 'detailsName' style={this.state.style}>{this.state.individualMovie.name}</h1>
-                <Link className = 'detailsLink' to='/'>Back to homepage</Link>
-            </div>
-        );
+        if (this.state.individualMovie) {
+            return (
+                <div className='details'>
+                    <h1 className='detailsName' style={this.state.style}>{this.state.individualMovie.name}</h1>
+                    <Link className='detailsLink' to='/'>Back to homepage</Link>
+                </div>
+            )
+        } else {
+            return <Redirect to='/not-found' />
+        }
     }
-} 
+}
