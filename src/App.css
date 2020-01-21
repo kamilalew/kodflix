@@ -1,3 +1,26 @@
 .App {
   text-align: center;
 }
+
+.background {
+  background-position: left;
+  opacity: 0.9;
+  padding: 10px;
+  padding-left: 50px;
+  color: rgb(153, 0, 0);
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main_title_1 {
+  color: grey;
+}
+
+.movie_icon {
+  height: 150px;
+  width: 150px;
+}
