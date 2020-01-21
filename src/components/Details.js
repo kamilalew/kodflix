@@ -32,7 +32,9 @@ export default class Details extends React.Component {
             return (
                 <div className='details'>
                     <h1 className='detailsName' style={this.state.style}>{this.state.individualMovie.name}</h1>
-                    <div className='detailsSynopsis'>{this.state.individualMovie.synopsis}
+                    <div className='synopsis_details_wrapper'>
+                        <div className='synopsisDetails'>{this.state.individualMovie.synopsis}</div>
+                        <img src={this.state.individualMovie.image} className='synopsisImage' alt={this.state.individualMovie.alt} />
                     </div>
                     <Link className='detailsLink' to='/'>Back to homepage</Link>
                 </div>
