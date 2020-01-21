@@ -32,6 +32,8 @@ export default class Details extends React.Component {
             return (
                 <div className='details'>
                     <h1 className='detailsName' style={this.state.style}>{this.state.individualMovie.name}</h1>
+                    <div className='detailsSynopsis'>{this.state.individualMovie.synopsis}
+                    </div>
                     <Link className='detailsLink' to='/'>Back to homepage</Link>
                 </div>
             )

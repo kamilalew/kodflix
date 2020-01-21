@@ -4,11 +4,17 @@
 
 .detailsName {
     color: red;
-    margin-top: 200px;
+    margin-top: 50px;
     font-size: 50px;
 }
 
 .detailsLink {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.detailsSynopsis {
     text-align: center;
     font-size: 30px;
     color: white;
