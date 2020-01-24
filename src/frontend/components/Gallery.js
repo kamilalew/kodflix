@@ -7,9 +7,8 @@ export default function Gallery() {
     return (
         <div>
             <div class='background'>
-                <div className='main_title'>PEDRO ALMODOVAR
-            </div>
                 <img src={movie_icon} className='movie_icon' alt='movie_icon'></img>
+                <div className='main_title'>PEDRO ALMODOVAR</div>      
             </div>
             <div className='container'>
                 {
