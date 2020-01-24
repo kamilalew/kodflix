@@ -15,7 +15,7 @@
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "start": "npm run start",
+    "start": "cross-env HTTPS=true react-scripts start",
     "start-all": "npm-run-all -p start-frontend start-backend",
     "start-frontend": "react-scripts start",
     "start-backend": "nodemon ./src/backend/app.js",
