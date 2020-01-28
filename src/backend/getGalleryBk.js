@@ -1,5 +1,5 @@
-module.exports = function getGallery(movies) {
-    return [
+module.exports = function getGallery(id) {
+    let movies = [
         { id: 'all_about_my_mother', name: 'All About My Mother', alt: 'All About My Mother Movie Cover', synopsis: 
         `A Greek saying states that only women who have washed their eyes with tears can see clearly. This saying does not hold true for Manuela. 
         The night a car ran over her son Esteban, Manuela cried until her eyes ran completely dry. Far from seeing clearly, the present and the future become mixed up in darkness. 
@@ -30,4 +30,15 @@ module.exports = function getGallery(movies) {
         save the lives of burn victims. Finally, after 12 years, Ledgard has created a skin that guards the body, but is still sensitive to touch. With the 
         aid of his faithful housekeeper, Ledgard tests his creation on Vera, who is held prisoner against her will in the doctor's mansion.` }
     ]
+   
+        if(id) {
+            let movie = movies.find(movie => movie.id === id);
+            if (movie) {
+               return movie;
+            }else{
+              return  'Movie not found in our database'
+            }
+        }else{
+            return movies
+        }
 }
