@@ -8,21 +8,24 @@ export default class Gallery extends React.Component {
 
     constructor() {
         super();
-        this.state = {}
+        this.state = { movie: {}}
     }
 
-    // componentDidMount() {
-    //     fetch('/rest/movies')
-    //         .then(response => response.json())
-    //         .then(data => console.log('is the backend working'))
-    // }
+    componentDidMount() {
+        fetch('/rest/movies')
+            .then(response => response.json())
+            .then(data => {
+                this.setState({ movie: data })
+                console.log('the backend returned:', data)
+            })
+    }
 
 
     render() {
         
         return (
             <div>
-                <div class='background'>
+                <div className='background'>
                     <img src={movie_icon} className='movie_icon' alt='movie_icon'></img>
                     <div className='main_title'>PEDRO ALMODOVAR</div>
                 </div>

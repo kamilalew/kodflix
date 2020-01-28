@@ -12,7 +12,7 @@ module.exports = function getGallery(id) {
         Her sister Sole lives nearby and they both miss their mother Irene, who died several years ago in a house fire along with their father. 
         A former neighbor from their hometown reports that she has seen the ghost of Irene and both daughters do not believe her. 
         After a murder and a family tragedy, Irene's spirit materializes around her daughters to help comfort them.` },
-        { id: 'pain_and_glory', name: 'Pain and Glory', alt: 'Pain and Glory Movie Cover', synopsis: 
+        { id: 'pain_and_glory', name: 'DUPA DUPA DUPA', alt: 'Pain and Glory Movie Cover', synopsis: 
         `A film director reflects on the choices he's made in life as the past and present come crashing down around him.` },
         { id: 'julieta', name: 'Julieta', alt: 'Julieta Movie Cover', synopsis: `After a chance meeting, middle-aged Julieta learns that 
         her long-lost daughter has resurfaced in Madrid. This begins a painful reflection by Julieta into her checkered past, flashing back to the moments 
