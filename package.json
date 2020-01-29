@@ -16,7 +16,7 @@
     "serve": "^11.3.0"
   },
   "scripts": {
-    "start": "serve -s build",
+    "start": "npm-run-all build -s start-backend",
     "start-all": "npm-run-all -p start-frontend start-backend",
     "start-frontend": "react-scripts start",
     "start-backend": "nodemon ./src/backend/app.js",
