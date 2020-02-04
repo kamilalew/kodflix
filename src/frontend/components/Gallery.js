@@ -2,6 +2,7 @@ import React from 'react';
 import Movies from './Movies.js';
 import getGallery from './getGallery.js';
 import movie_icon from '../images/movie_icon.png';
+import Search from './Search.js'
 // import { render } from '@testing-library/react';
 
 export default class Gallery extends React.Component {
