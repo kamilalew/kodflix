@@ -10,7 +10,7 @@ import verge_of_a_nervous_breakdown from '../images/verge_of_a_nervous_breakdown
 export default function getGallery(movies) {
     return [
         {
-            id: 'all_about_my_mother', name: 'All About My Mother', image: all_about_my_mother, alt: 'All About My Mother Movie Cover', synopsis:
+            id: 'all_about_my_mother', name: 'All About My Mother', image: 'all_about_my_mother', alt: 'All About My Mother Movie Cover', synopsis:
                 `A Greek saying states that only women who have washed their eyes with tears can see clearly. This saying does not hold true for Manuela. 
         The night a car ran over her son Esteban, Manuela cried until her eyes ran completely dry. Far from seeing clearly, the present and the future become mixed up in darkness. 
         She begins looking for his father who has become a transvestite.` },

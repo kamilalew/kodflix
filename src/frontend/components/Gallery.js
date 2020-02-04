@@ -9,21 +9,22 @@ export default class Gallery extends React.Component {
 
     constructor() {
         super();
-        this.state = { movie: {}}
+        this.state = { movies: []}
     }
 
     componentDidMount() {
         fetch('/rest/movies')
             .then(response => response.json())
             .then(data => {
-                this.setState({ movie: data })
+                this.setState({ movies: data})
                 console.log('the backend returned:', data)
+                console.log(this.state.movies);
             })
     }
 
 
     render() {
-        
+    
         return (
             <div>
                 <div className='background'>
@@ -32,13 +33,13 @@ export default class Gallery extends React.Component {
                 </div>
                 <div className='container'>
                     {
-                        getGallery().map(movie => (
+                        this.state.movies.map(movie => (
                             <Movies
                                 key={movie.id}
                                 id={movie.id}
                                 name={movie.name}
                                 image={movie.image}
-                                alt={movie.alt} />
+                                alt={movie.alt} />       
                         ))
                     }
                 </div>
