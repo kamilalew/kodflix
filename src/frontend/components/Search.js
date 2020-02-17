@@ -10,11 +10,11 @@ export default class Search extends React.Component {
         }
     }
 
-    searchMovie(placeholder) {      //??
+    searchMovie(placeholder) {    
         let getMovieNames = getGallery()
         .filter(movie => movie.name.toLowerCase().includes(placeholder.toLowerCase()))
         .map(movie => movie.name);
-        this.setState({ getMovieNames: getMovieNames })    //???
+        this.setState({ getMovieNames: getMovieNames })  
     }
 
     thisHandle(event) {

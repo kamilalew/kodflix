@@ -1,15 +1,12 @@
 import React from 'react';
 import Movies from './Movies.js';
-import getGallery from './getGallery.js';
 import movie_icon from '../images/movie_icon.png';
-import Search from './Search.js'
-// import { render } from '@testing-library/react';
 
 export default class Gallery extends React.Component {
 
     constructor() {
         super();
-        this.state = { movies: []}
+        this.state = { movies: [] }
     }
 
     componentDidMount() {
@@ -24,7 +21,6 @@ export default class Gallery extends React.Component {
 
 
     render() {
-    
         return (
             <div>
                 <div className='background'>
@@ -36,6 +32,7 @@ export default class Gallery extends React.Component {
                         this.state.movies.map(movie => (
                             <Movies
                                 key={movie.id}
+                                movies={this.state.movies}
                                 id={movie.id}
                                 name={movie.name}
                                 image={movie.image}
